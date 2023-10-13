@@ -1,7 +1,7 @@
 ﻿@page "/"
-@using Microsoft.AspNetCore.Components.Web
-﻿@using Microsoft.AspNetCore.Identity
-@namespace BlazorApp1.Pages
+@using BlazorApp1;
+@using Microsoft.AspNetCore.Components.Web;
+@model BlazorApp1.Pages.HostModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -33,6 +33,3 @@
     <script src="_framework/blazor.server.js"></script>
 </body>
 </html>
-@{
-    var req = HttpContext.Request;
-}
